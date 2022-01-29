@@ -1,0 +1,139 @@
+header {
+	background: radial-gradient(#5e5e5d, black);
+}
+
+body {
+	background: url("../images/backdrop.jpg");
+	background-size: 100vw;
+	font-size: 1.25em;
+	text-align: center;
+	font-family: "Futura", sans-serif;
+	color: #f5f3d5;
+}
+
+ul {
+	 list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #f5f3d5;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.page-title {
+	font-size: 3em;
+}
+
+.subtitle {
+	font-style:;
+}
+
+.para-text {
+
+}
+
+.list-item {
+
+}
+
+.pub-thumbnail {
+	width: 60%;
+	border-radius: 10%;
+}
+
+.external-link {
+
+}
+
+.nav-link {
+
+}
+
+.pdf-iframe {
+}
+
+#website-title {
+	font-size: 4em;/*em is relative to the standard font size.*/
+	text-align: center;
+	font-weight: 1000;
+}
+
+#intro-list {
+	font-style: oblique;
+}
+
+#contact-us {
+	
+}
+
+/* Some text tools:
+	text-transform: uppercase; (also lowercase)
+	text-align: justify; //justifies text on the page.
+*/
+
+/*	NOTES ON COLOR
+	rgba() has four arguments, with the fourth argument between 0-1 defining alpha for an RGB color.
+	Radial gradient: (red, blue) //inside to outside (red 20%, blue 40%, green 40%). Circle and ellipse arguments.
+	Linear gradient: background: linear-gradient(to right, red, blue); //left to right red to blue gradient.
+	linear gradients can also accept (to top) or (to bottom right) for vertical or diagonal gradients.
+	Also use angles for linear gradients: -30deg
+*/
+
+/* ADVANCED SELECTORS
+h2 + a { selects every a tag following an h2. ADJACENT SIBLING SELECTOR.
+}
+
+textarea ~ button //every button that is after a text area, but under the same parent.
+
+li:first-child { selects the first chilld in a list
+	color: steelblue;
+}
+
+ul > li { ///selects every li inside of a ul, child selector.
+}
+
+ul li {//descendent selector, any descendent, not direct children (selects grandchildren, etc.)
+}
+*/
+
+/* ATTRIBUTE SELECTORS. select a tag, but only those with a specific attribute.
+	h2[class=subtitle]{
+	}
+	img[src^="../images"]//all images in a particular directory the carrot means 'starts with'.
+	img[src*="../images"]//star is contains, like unix
+	Multiple class arguments can be separated by space, so a white-space selector selects
+	all with multiple arguments
+	h2[class~=article-subtitle]//this is whitespace selector, contains class.
+	h2[class|=article-subtitle] anything with subtitle and then something after a dash. Common in css
+	libraries. Not too common.
+*/
+
+/*
+General css selector rules:
+class selectors for html tags start with dot,
+ID selectors for html tags start with #.
+By style convenion, IDs use hyphens to separate words.
+
+Selector specificity: 
+	contradicting style for the same element (ex. h2 are red, but subtitle is blue),
+	so an h2 subtitle will be blue, because subtitle is more 'specific'. 
+	Here  are the relative specificities of selectors, from msot to least specific:
+		In-line style (like writing style inside of the html tag directly)
+		ID
+		Class
+		Raw Tag
+
+IDs are conventionally used for a single element, whereas classes are intended to
+be used broadly throughout a webpage, hence the specificity difference.
+
+Pseudoselectors: also called pseudo-classes. A selector that applies style only
+for a specific state. For example, :hover applies the style when the mouse cursor
+is over the element.
+:nth-child(2) for example, is a pseudoselector the nth element in a list, in this case the 2nd.
+:only-child will only work if there is a list with one element. Won't style for lists with multiple items.
+
+*/

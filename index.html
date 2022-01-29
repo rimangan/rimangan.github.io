@@ -2,41 +2,54 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="description" content="Personal website of Riley J. Mangan, Ph.D. candidate in Molecular Genetics and Microbiology.">
+		<meta name="description" content="Riley J. Mangan, Ph.D. candidate in Molecular Genetics and Microbiology. Comparative genomics, human evolution, and neurodevelopment.">
 		<meta name="author" content="Riley J. Mangan">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="comparative genomics, human evolution, neurodevelopment, computation, genetics">
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
 		<title>Riley J. Mangan</title>
 	</head>
-	<body style="background-color:#D4E6F1">
+	<body>
 		<header>
-			<h1>Riley J. Mangan</h1>
-			<big>Ph.D. Candidate</big>, <small>Molecular Genetics and Microbiology</small>, Duke University
+			<h1 id="website-title">Riley J. Mangan</h1>
+			<ul id="intro-list">
+				<li class="list-item">
+					Ph.D. Candidate
+				</li>
+				<li class="list-item">
+					Molecular Genetics and Microbiology
+				</li>	
+				<li class="list-item">
+					Duke University
+				</li>		
+			</ul>	
 			<br/> <!--- This is a break, creates space in the file.-->
-			<nav>
-
-			</nav>
 		</header>
 		<main>
-			<hr/> <!--- Single tag. Horizontal rule. Makes a line to break up a page.-->
-			<h2 style="color:darkgreen">Searching for the genetic correlates of
-			human-specific phenotypes and disease</h2>
-			<p>
-				In the last six million years, humans and dramatically diverged from our
-				recent great ape ancestors to acquire remarkable new phenotypes, 
-				including bipedal locomotion and the development of the human brain. New
-				advances in genomics and population genetics provide new avenues to
-				explore how changes in our genome during that time have caused those
-				changes to come about. In my work, here are the <b><i>Main Questions
-				</i></b>: What makes us human, and how did we get here? How did rapid
-				 changes in our genome change our susceptibility to diseases?
-				</p>
-			<a href="publications.html">
-				Publications
-			</a>
-			<a href="https://github.com/rimangan/CV/raw/main/CV.pdf"> My CV</a>
+			<ul>
+				<li class="list-item">
+					<a class="nav-link" href="bio.html">About Me</a>
+				</li>
+				<li class="list-item">
+					<a class="nav-link" href="publications.html">Publications</a>
+				</li>
+				<li class="list-item">
+					<a class="nav-link" href="cv.html">CV</a>
 		</main>
+				</li>
+			</ul>
 		<footer>
-			<a href="https://github.com/rimangan" target="_blank"> <b>Connect on Github</b></a><!-- _blank target opens in new tab instead of in the current tab-->
+			<h2 id="contact-us">Get in Touch</h2>
+			<ul>
+				<li class="list-item">
+					<a href="https://github.com/rimangan" target="_blank" class="external-link">Github</a>
+				</li>
+				<li class="list-item">
+					<a href="https://twitter.com/riley_mangan" target="_blank" class="external-link">Twitter</a>
+				</li>	
+			</ul>	
 		</footer>
 	</body>
 </html>
@@ -51,5 +64,17 @@ Other useful tags:
 	<ul> Unordered list, with elements <li>
 	<ol type="1"> Ordered list, elements will get numbers. Still takes element <li> Type A lists letter. Type "a" is lower case. Type "I" uppercase roman numerals. Type "i" lowercase roman numerals.
 	<dl> description list. <dt> description term is the analog of list item. <dd> is the description for the dt.
-	<table> <  
+	<table> <tr> is table row, and <td> is one column within that row. <caption> adds a title to the table.
+	table argument colspan in td can determine the number of columns that entry contains.
+	<span> is an inline container
+	<div> are block element containers
+	<input type="text" /> single tag for a textbox for user. Requires js scripts to send to the website 
+	administrator. type="password" hides input "****". value="Enter your username" sets default text in the box.
+	Other types: "date", "email", "range" //gives sliding scale. "file", opens upload menu. Still require JS.
+	"checkbox", "radio" //two radio with the same name cannot be simultaneously selected. "submit", built
+	in submit button.
+	<textarea rows="10" cols="30"> </textarea> A large box for text input, can be resized with the corner button.
+	<form></form>. a wrapper for storing user input.
+	<iframe src="">Display text if the website cannot be accessed.</iframe> embeds other websites inside of the html webpage.
 -->
+
