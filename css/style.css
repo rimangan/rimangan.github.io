@@ -19,6 +19,24 @@ ul {
 	/*display: flex;*/
 }
 
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 10%;
+	background: radial-gradient(#5e5e5d, black);
+	text-align: center;
+}
+
+footer > div {
+    display:table-cell;
+    vertical-align:middle;
+    text-align: center;
+
+    padding:20px;
+}
+
 a {
 	text-decoration: none;
 	color: #f5f3d5;
@@ -30,32 +48,46 @@ a:hover {
 
 .page-title {
 	font-size: 3em;
+	text-align: center;
 	background: radial-gradient(#5e5e5d, black);
 	border: 10pt solid black;
 	padding: 50px 0px 50px 0px;
 	margin: 50px 200px 50px 200px;
 }
 
-.subtitle {
-}
-
-.para-text {
-}
-
-.list-item {
-}
-
 .pub-thumbnail {
-	width: 500px;
+	width: 50%;
 	border-radius: 10%;
 }
 
-.external-link {
+.external-link-image {
+	height: 30px;
+}
 
+.external-link {
 }
 
 .nav-link {
+	background: radial-gradient(#5e5e5d, black);
+	border: 5pt solid black;
+	padding: 20px;
+	margin: 20px;
+}
 
+.nav-line:hover {
+	transform: ;
+}
+
+.home-link {
+}
+
+#nav-container {
+	height: 300px;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	justify-content: space-around;
 }
 
 .pdf-iframe {
@@ -65,23 +97,33 @@ a:hover {
 }
 
 #website-title {
-	font-size: 400%;
+	font-size: 200%;
 	text-align: center;
 	font-weight: 1000;
 }
 
-#intro-list {
+#intro-div {
 	font-style: oblique;
 }
 
 #contact-us {
+	flex-direction: row;
+	display: flex;
+	justify-content: center;
 	text-align: center;
+	justify-content: space-around;
 }
 
 #bio-pic {
-	border-radius:10%;
-	height:500px;
+	border-radius:20%;
+	width:50%;
+	float: right;
+	padding: 50px;
 }
+
+/*
+	display: none; is a good trick to hide a class or id.
+*/
 
 /* PADDING AND MARGIN TIPS:
 	padding-top adds only to the top size. aso bottom, left, and right are possible.
