@@ -62,6 +62,13 @@ a:hover {
 
 .external-link-image {
 	height: 30px;
+	-webkit-transition: height 400ms ease-in-out;
+	-moz-transition: height 400ms ease-in-out;
+	-o-transition: height 400ms ease-in-out;
+}
+
+.external-link-image:hover {
+	height: 50px;
 }
 
 .external-link {
@@ -72,13 +79,24 @@ a:hover {
 	border: 5pt solid black;
 	padding: 20px;
 	margin: 20px;
+	-webkit-transition: font-size 400ms ease-in-out;
+	-moz-transition: font-size 400ms ease-in-out;/*for mozilla browser support*/
+	-o-transition: font-size 400ms ease-in-out;/*for opera browser support*/
 }
 
-.nav-line:hover {
-	transform: ;
+.nav-link:hover {
+	text-decoration: underline;
+	font-size: 1.25em;
 }
 
-.home-link {
+.home-button {
+	-webkit-transition: font-size 400ms ease-in-out;
+	-moz-transition: font-size 400ms ease-in-out;/*for mozilla browser support*/
+	-o-transition: font-size 400ms ease-in-out;/*for opera browser support*/
+}
+
+.home-button:hover {
+	font-size: 1.25em;
 }
 
 #nav-container {
