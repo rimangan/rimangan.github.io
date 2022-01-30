@@ -1,5 +1,7 @@
 header {
 	background: radial-gradient(#5e5e5d, black);
+	border: 10pt solid black;
+	margin: 30px;
 }
 
 body {
@@ -9,10 +11,12 @@ body {
 	text-align: center;
 	font-family: "Futura", sans-serif;
 	color: #f5f3d5;
+	margin: 50px;
 }
 
 ul {
-	 list-style-type: none;
+	list-style-type: none;
+	/*display: flex;*/
 }
 
 a {
@@ -26,22 +30,23 @@ a:hover {
 
 .page-title {
 	font-size: 3em;
+	background: radial-gradient(#5e5e5d, black);
+	border: 10pt solid black;
+	padding: 50px 0px 50px 0px;
+	margin: 50px 200px 50px 200px;
 }
 
 .subtitle {
-	font-style:;
 }
 
 .para-text {
-
 }
 
 .list-item {
-
 }
 
 .pub-thumbnail {
-	width: 60%;
+	width: 500px;
 	border-radius: 10%;
 }
 
@@ -54,10 +59,13 @@ a:hover {
 }
 
 .pdf-iframe {
+	width: 70%;
+	height:  800px;
+	border: 2pt solid black;
 }
 
 #website-title {
-	font-size: 4em;/*em is relative to the standard font size.*/
+	font-size: 400%;
 	text-align: center;
 	font-weight: 1000;
 }
@@ -67,8 +75,18 @@ a:hover {
 }
 
 #contact-us {
-	
+	text-align: center;
 }
+
+#bio-pic {
+	border-radius:10%;
+	height:500px;
+}
+
+/* PADDING AND MARGIN TIPS:
+	padding-top adds only to the top size. aso bottom, left, and right are possible.
+	padding: 100px 40px 0px 5px; top, right, bottom, left. Short hand to change all 4 sides at once.
+*/
 
 /* Some text tools:
 	text-transform: uppercase; (also lowercase)
