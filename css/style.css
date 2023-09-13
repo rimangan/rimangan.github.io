@@ -1,5 +1,5 @@
 header {
-	background: radial-gradient(#5e5e5d, black);
+	background: radial-gradient(#d5d5d5, rgb(85, 85, 85));
 	border: 10pt solid black;
 	margin: 30px;
 }
@@ -10,7 +10,7 @@ body {
 	font-size: 1.25em;
 	text-align: center;
 	font-family: "Futura", sans-serif;
-	color: #f5f3d5;
+	color: #2c2c2c;
 	margin: 50px;
 }
 
@@ -36,7 +36,7 @@ footer {
 	bottom: 0;
 	width: 100%;
 	height: 10%;
-	background: radial-gradient(#5e5e5d, black);
+	background: radial-gradient(#aaaaaa, rgb(74, 74, 74));
 	text-align: center;
 }
 
@@ -50,7 +50,7 @@ footer > div {
 
 a {
 	text-decoration: none;
-	color: #f5f3d5;
+	color: #2c2c2c;
 }
 
 a:hover {
@@ -60,7 +60,7 @@ a:hover {
 .page-title {
 	font-size: 3em;
 	text-align: center;
-	background: radial-gradient(#5e5e5d, black);
+	background: radial-gradient(#afafaf, rgb(85, 85, 85));
 	border: 10pt solid black;
 	padding: 50px 0px 50px 0px;
 	margin: 50px 200px 50px 200px;
@@ -86,7 +86,7 @@ a:hover {
 }
 
 .nav-link {
-	background: radial-gradient(#5e5e5d, black);
+	background: radial-gradient(#d5d5d5, rgb(76, 76, 76));
 	border: 5pt solid black;
 	padding: 20px;
 	margin: 20px;
@@ -150,6 +150,30 @@ a:hover {
 	width:50%;
 	float: right;
 	padding: 50px;
+}
+
+.publication-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+
+.publication-list .list-item {
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 20px;
+    border: 2px solid #2c2c2c;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.list-item h3 {
+    margin-top: 0;
+}
+
+.list-item h4 {
+    margin: 5px 0;
 }
 
 /*
